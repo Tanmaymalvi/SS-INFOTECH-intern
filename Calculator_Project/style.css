@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0b0f19; /* Ultra Dark Premium Background */
+}
+
+.calculator {
+    width: 360px;
+    background-color: #161b26;
+    border-radius: 28px;
+    padding: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Professional Display Area */
+.screen-container {
+    background-color: #0d111a;
+    padding: 20px;
+    border-radius: 18px;
+    text-align: right;
+    margin-bottom: 24px;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.equation-view {
+    color: #64748b;
+    font-size: 1.1rem;
+    min-height: 24px;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.main-display {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 2.6rem;
+    font-weight: 500;
+    text-align: right;
+    outline: none;
+}
+
+/* Keypad Grid */
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    height: 62px;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.12s ease;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Professional Color Palette */
+.btn-num {
+    background-color: #222938;
+    color: #f8fafc;
+}
+
+.btn-num:hover {
+    background-color: #2d3547;
+}
+
+.btn-operator {
+    background-color: rgba(245, 158, 11, 0.12);
+    color: #f59e0b; /* Professional Amber Orange */
+}
+
+.btn-operator:hover {
+    background-color: #f59e0b;
+    color: #0b0f19;
+}
+
+.btn-action {
+    background-color: #334155;
+    color: #cbd5e1;
+}
+
+.btn-action:hover {
+    background-color: #475569;
+}
+
+.btn-equal {
+    background-color: #10b981; /* Mint Green Success Color */
+    color: #ffffff;
+}
+
+.btn-equal:hover {
+    background-color: #059669;
+}
